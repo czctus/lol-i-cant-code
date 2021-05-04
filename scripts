@@ -1,3 +1,4 @@
+```ruby
 -- 1st normal script:
 local Remote = script.Parent.RemoteEvent
  
@@ -23,3 +24,4 @@ end
  
 script.Parent.MouseButton1Click:Connect(leftClick)
 script.Parent.MouseButton2Click:Connect(rightClick)
+```
