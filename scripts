@@ -1,0 +1,25 @@
+-- 1st normal script:
+local Remote = script.Parent.RemoteEvent
+ 
+Remote.OnServerEvent:Connect(function(plr)
+    plr.Character = game.Workspace["UR CHARACTER NAME"}
+end)
+ 
+--1st local script:
+local Remote = script.Parent.RemoteEvent
+ 
+script.Parent.MouseButton1Click:Connect(function()
+ Remote:FireServer()
+end)
+ 
+-- 2ed local script:
+function leftClick()
+    game.Workspace.Camera.CameraSubject = game.Workspace["UR CHARACTER NAME"].Humanoid
+end
+ 
+function rightClick()
+    print("Right mouse click")
+end
+ 
+script.Parent.MouseButton1Click:Connect(leftClick)
+script.Parent.MouseButton2Click:Connect(rightClick)
